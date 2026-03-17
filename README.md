@@ -141,6 +141,8 @@ diabetes-risk-assessment/
 pip install -r requirements.txt
 streamlit run dashboard/app.py
 
+---
+
 ## Model Performance
 
 - Accuracy: ~73–75%
