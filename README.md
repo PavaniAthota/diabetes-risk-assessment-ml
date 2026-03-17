@@ -140,8 +140,7 @@ diabetes-risk-assessment/
 ```bash
 pip install -r requirements.txt
 streamlit run dashboard/app.py
-
----
+```
 
 ## Model Performance
 
@@ -166,4 +165,3 @@ Evaluation metrics:
 ## Author
 
 Pavani Athota
-
