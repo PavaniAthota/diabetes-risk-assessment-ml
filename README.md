@@ -1,121 +1,133 @@
-# 🧠 Diabetes Risk Assessment using Machine Learning
+# Diabetes Risk Assessment using Machine Learning
 
-An interpretable machine learning system for predicting diabetes risk from clinical health data, combined with an interactive dashboard for visualization, explanation, and decision support.
-
----
-
-## 🔍 Overview
-
-This project focuses on building a **clinically interpretable predictive system** that not only estimates diabetes risk but also provides actionable insights.
-
-### 🎯 Key Features
-
-- Predict diabetes probability using patient data  
-- Provide clinically meaningful interpretations  
-- Interactive dashboard for visualization  
-- Time-series simulation for risk progression  
+This project presents a machine learning system for predicting diabetes risk using clinical health data. It also includes an interactive dashboard for visualization and basic decision support.
 
 ---
 
-## ⚙️ Methodology
+## Overview
 
-### 🧹 Data Preprocessing
+The goal of this project is to build a predictive system that can estimate the likelihood of diabetes while also providing simple and understandable insights.
 
-- Cleaned and structured clinical dataset  
-- Handled missing and invalid values  
-- Prepared features for training  
+The system combines:
+- Machine learning for prediction  
+- Basic clinical rules for interpretation  
+- An interactive dashboard for visualization  
 
----
-
-### 🤖 Machine Learning Model
-
-- **Algorithm:** Random Forest Classifier  
-- **Features:** Glucose, BMI, Age, Blood Pressure  
-- **Output:** Probability of diabetes  
-
-✔ Chosen for balance between performance and interpretability  
+Key capabilities include:
+- Predicting diabetes risk from patient data  
+- Providing clinically meaningful interpretation  
+- Visualizing results through a dashboard  
+- Simulating risk progression using time-series data  
 
 ---
 
-### 💾 Model Persistence
+## Methodology
 
-- Saved using `pickle`  
-- File: `models/diabetes_model.pkl`  
-- Enables reuse without retraining  
+### Data Preprocessing
 
----
-
-## 💻 Interactive Dashboard (Streamlit)
-
-### 🔹 Prediction
-
-- Input patient data  
-- Real-time risk prediction  
+- Cleaned and structured the dataset  
+- Handled missing and zero values  
+- Prepared features for model training  
 
 ---
 
-### 🔹 Visualization
+### Machine Learning Model
 
-- Donut chart (distribution)  
-- Glucose vs Age trends  
-- Risk gauge  
+- Algorithm: Random Forest Classifier  
+- Input features:
+  - Glucose  
+  - BMI  
+  - Age  
+  - Blood Pressure  
+- Output: Probability of diabetes  
+
+The model was selected because it provides a good balance between performance and interpretability.
 
 ---
 
-### 🔹 Clinical Interpretation
+### Model Persistence
+
+- Model saved using `pickle`  
+- File location: `models/diabetes_model.pkl`  
+- Allows reuse without retraining  
+
+---
+
+## Interactive Dashboard (Streamlit)
+
+The dashboard allows users to interact with the model in real time.
+
+### Prediction
+
+- Users can input patient data  
+- The system returns a diabetes risk prediction  
+
+---
+
+### Visualization
+
+- Donut chart for class distribution  
+- Glucose vs Age trend  
+- Risk gauge visualization  
+
+---
+
+### Clinical Interpretation
 
 - Glucose thresholds:
   - ≥ 200 → High Risk  
   - 140–199 → Prediabetic  
 
-✔ Hybrid system: ML + clinical rules  
+A simple hybrid approach is used by combining model predictions with clinical rules.
 
 ---
 
-### 🔹 Recommendations
+### Recommendations
 
-- Lifestyle suggestions based on risk level  
+- Provides basic lifestyle suggestions based on predicted risk  
 
 ---
 
-## ⏱ Time-Series Analysis
+## Time-Series Analysis
 
-- Simulates glucose changes over time  
-- Tracks risk progression  
+A simulated time-series component is included to explore how risk may change over time.
+
+- Tracks glucose variation  
+- Estimates risk progression  
 - Visualized using line plots  
 
-✔ Mimics real-world patient monitoring  
+This is intended to resemble basic longitudinal monitoring.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 diabetes-risk-assessment/
 
 ├── data/
-│   ├── raw_data/
-│   │   └── diabetes.csv
-│   ├── processed_data/
-│   │   ├── diabetes_clean.csv
-│   │   └── diabetes_timeseries.csv
+│ ├── raw_data/
+│ │ └── diabetes.csv
+│ ├── processed_data/
+│ │ ├── diabetes_clean.csv
+│ │ └── diabetes_timeseries.csv
 
 ├── models/
-│   └── diabetes_model.pkl
+│ └── diabetes_model.pkl
 
 ├── notebooks/
-│   └── exploratory_analysis.ipynb
+│ └── exploratory_analysis.ipynb
 
 ├── src/
-│   ├── data_preprocessing.py
-│   ├── train_model.py
-│   ├── interpretability.py
-│   └── time_series_data.py
+│ ├── data_preprocessing.py
+│ ├── train_model.py
+│ ├── interpretability.py
+│ └── time_series_data.py
 
 ├── dashboard/
-│   └── app.py
+│ └── app.py
 
 ├── results/
-│   └── figures/
+│ └── figures/
 
 ├── requirements.txt
 └── README.md
@@ -123,34 +135,33 @@ diabetes-risk-assessment/
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ```bash
 pip install -r requirements.txt
 streamlit run dashboard/app.py
 
-## 📊 Model Performance
+## Model Performance
 
-- **Accuracy:** ~73–75%  
+- Accuracy: ~73–75%
 
-### Evaluation Metrics
-
+Evaluation metrics:
 - Precision  
 - Recall  
 - F1-score  
 
 ---
 
-## 🚀 Future Improvements
+## Future Work
 
-- Use real longitudinal healthcare data  
-- Add deep learning models (LSTM)  
-- Integrate SHAP explainability  
+- Use real longitudinal clinical data  
+- Explore deep learning models such as LSTM  
+- Add SHAP-based interpretability to the dashboard  
 - Deploy as a web application  
 
 ---
 
-## 👩‍💻 Author
+## Author
 
-**Pavani Athota**
+Pavani Athota
 
