@@ -137,8 +137,15 @@ diabetes-risk-assessment/
 
 ## How to Run
 
+### Install Requirements
+
 ```bash
 pip install -r requirements.txt
+```
+
+### Run Dashboard
+
+```bash
 streamlit run dashboard/app.py
 ```
 
