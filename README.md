@@ -102,36 +102,39 @@ This is intended to resemble basic longitudinal monitoring.
 
 ## Project Structure
 
+```
 diabetes-risk-assessment/
 
 ├── dashboard/
-│ └── app.py
+│   └── app.py
 
 ├── data/
-│ ├── raw_data/
-│ │ └── diabetes.csv
-│ └── processed_data/
-│ ├── diabetes_clean.csv
-│ └── diabetes_timeseries.csv
+│   ├── raw_data/
+│   │   └── diabetes.csv
+│   └── processed_data/
+│       ├── diabetes_clean.csv
+│       └── diabetes_timeseries.csv
 
 ├── models/
-│ └── diabetes_model.pkl
+│   └── diabetes_model.pkl
 
 ├── notebooks/
-│ └── exploratory_analysis.ipynb
+│   └── exploratory_analysis.ipynb
 
 ├── results/
-│ └── figures/
+│   └── figures/
 
 ├── src/
-│ ├── data_preprocessing.py
-│ ├── train_model.py
-│ ├── interpretability.py
-│ └── time_series_data.py
+│   ├── data_preprocessing.py
+│   ├── train_model.py
+│   ├── interpretability.py
+│   └── time_series_data.py
 
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+```
+
 ---
 
 ## How to Run
