@@ -105,33 +105,60 @@ This is intended to resemble basic longitudinal monitoring.
 diabetes-risk-assessment/
 
 ├── data/
-│   ├── raw/
-│   │   └── diabetes.csv
-│   └── processed/
-│       ├── diabetes_clean.csv
-│       └── diabetes_timeseries.csv
+│ ├── raw/
+│ │ └── diabetes.csv
+│ └── processed/
+│ ├── diabetes_clean.csv
+│ └── diabetes_timeseries.csv
 
 ├── models/
-│   └── diabetes_model.pkl
+│ └── diabetes_model.pkl
 
 ├── src/
-│   ├── preprocessing.py
-│   ├── train.py
-│   ├── interpretability.py
-│   └── timeseries.py
+│ ├── preprocessing.py
+│ ├── train.py
+│ ├── interpretability.py
+│ └── timeseries.py
 
 ├── dashboard/
-│   └── app.py
+│ └── app.py
 
 ├── notebooks/
-│   └── exploratory_analysis.ipynb
+│ └── exploratory_analysis.ipynb
 
 ├── outputs/
-│   └── figures/
+│ └── figures/
+
+├── requirements.txt
+└── README.mddiabetes-risk-assessment/
+
+├── data/
+│ ├── raw/
+│ │ └── diabetes.csv
+│ └── processed/
+│ ├── diabetes_clean.csv
+│ └── diabetes_timeseries.csv
+
+├── models/
+│ └── diabetes_model.pkl
+
+├── src/
+│ ├── preprocessing.py
+│ ├── train.py
+│ ├── interpretability.py
+│ └── timeseries.py
+
+├── dashboard/
+│ └── app.py
+
+├── notebooks/
+│ └── exploratory_analysis.ipynb
+
+├── outputs/
+│ └── figures/
 
 ├── requirements.txt
 └── README.md
-
 
 ---
 
