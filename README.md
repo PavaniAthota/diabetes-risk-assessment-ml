@@ -104,62 +104,34 @@ This is intended to resemble basic longitudinal monitoring.
 
 diabetes-risk-assessment/
 
+├── dashboard/
+│ └── app.py
+
 ├── data/
-│ ├── raw/
+│ ├── raw_data/
 │ │ └── diabetes.csv
-│ └── processed/
+│ └── processed_data/
 │ ├── diabetes_clean.csv
 │ └── diabetes_timeseries.csv
 
 ├── models/
 │ └── diabetes_model.pkl
 
-├── src/
-│ ├── preprocessing.py
-│ ├── train.py
-│ ├── interpretability.py
-│ └── timeseries.py
-
-├── dashboard/
-│ └── app.py
-
 ├── notebooks/
 │ └── exploratory_analysis.ipynb
 
-├── outputs/
+├── results/
 │ └── figures/
-
-├── requirements.txt
-└── README.mddiabetes-risk-assessment/
-
-├── data/
-│ ├── raw/
-│ │ └── diabetes.csv
-│ └── processed/
-│ ├── diabetes_clean.csv
-│ └── diabetes_timeseries.csv
-
-├── models/
-│ └── diabetes_model.pkl
 
 ├── src/
-│ ├── preprocessing.py
-│ ├── train.py
+│ ├── data_preprocessing.py
+│ ├── train_model.py
 │ ├── interpretability.py
-│ └── timeseries.py
+│ └── time_series_data.py
 
-├── dashboard/
-│ └── app.py
-
-├── notebooks/
-│ └── exploratory_analysis.ipynb
-
-├── outputs/
-│ └── figures/
-
-├── requirements.txt
-└── README.md
-
+├── .gitignore
+├── README.md
+└── requirements.txt
 ---
 
 ## How to Run
