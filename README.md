@@ -105,29 +105,29 @@ This is intended to resemble basic longitudinal monitoring.
 diabetes-risk-assessment/
 
 ├── data/
-│ ├── raw_data/
-│ │ └── diabetes.csv
-│ ├── processed_data/
-│ │ ├── diabetes_clean.csv
-│ │ └── diabetes_timeseries.csv
+│   ├── raw/
+│   │   └── diabetes.csv
+│   └── processed/
+│       ├── diabetes_clean.csv
+│       └── diabetes_timeseries.csv
 
 ├── models/
-│ └── diabetes_model.pkl
-
-├── notebooks/
-│ └── exploratory_analysis.ipynb
+│   └── diabetes_model.pkl
 
 ├── src/
-│ ├── data_preprocessing.py
-│ ├── train_model.py
-│ ├── interpretability.py
-│ └── time_series_data.py
+│   ├── preprocessing.py
+│   ├── train.py
+│   ├── interpretability.py
+│   └── timeseries.py
 
 ├── dashboard/
-│ └── app.py
+│   └── app.py
 
-├── results/
-│ └── figures/
+├── notebooks/
+│   └── exploratory_analysis.ipynb
+
+├── outputs/
+│   └── figures/
 
 ├── requirements.txt
 └── README.md
