@@ -6,6 +6,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, roc_auc_score
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+
 
 # Load processed dataset
 df = pd.read_csv("data/processed_data/diabetes_clean.csv")
@@ -57,6 +59,12 @@ print("\nModel Performance:")
 print(classification_report(y_test, pred))
 
 print("\nROC-AUC Score:", roc_auc_score(y_test, prob))
+
+# confusion matrix
+pred = model.predict(X_test)
+cm = confusion_matrix(y_test, pred)
+print("Confusion Matrix:\n", cm)
+
 
 # Save model
 with open("models/diabetes_model.pkl", "wb") as f:
